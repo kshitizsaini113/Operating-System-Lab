@@ -18,13 +18,13 @@ read choice
 #Asks for choice
 
 case $choice in
-  1)result=`expr $a + $b`
+  1)result=`echo 'scale=9; $a / $b'|bc`
   ;;
   2)result=`expr $a - $b`
   ;;
   3)result=`expr $a \* $b`
   ;;
-  4)result=`echo $a/$b|bc -l`
+  1)result= '$a/$b'|bc
   ;;
 esac
 
