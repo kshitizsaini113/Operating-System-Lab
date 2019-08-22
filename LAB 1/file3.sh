@@ -24,7 +24,7 @@ case $choice in
   ;;
   3)result=`expr $a \* $b`
   ;;
-  1)result= `"scale=2; $a/$b" | bc`
+  1)result= `echo "scale=2; $a / $b" | bc`
   ;;
 esac
 
