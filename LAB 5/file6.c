@@ -7,7 +7,7 @@ void main(void)
 {
   int i,j;
   fun(1);
-  printf("...\n");
+  printf("\n");
 }
 
 void fun(int j)
@@ -16,10 +16,10 @@ void fun(int j)
   p=fork();
   if(p!=0)
   {
-  printf("*");
+    printf("*");
   }
   else
   {
-  printf("%d",j);
+    printf("%d",j);
   }
 }
