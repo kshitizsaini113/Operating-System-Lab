@@ -2,7 +2,7 @@
 #include <sys/types.h>
 #include <string.h>
 
-#define MAX_COUNT 2
+#define MAX_COUNT 50
 #define BUF_SIZE 100
 
 void main(void)

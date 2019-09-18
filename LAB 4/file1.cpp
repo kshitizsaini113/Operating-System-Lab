@@ -26,12 +26,5 @@ int main(int argc, char **argv)
   {
     cout<<"Factorial of negative number is not possible"<<endl;
   }
-  //system("cd..");
-  //system("cd Documents");
-  //system("chmod +x file2.sh");
-  char buf[32];
-  sprintf(buf, "./file2.sh %d", fact);
-  system(buf);
-  //system("./file2.sh %d",fact);
   return fact;
 }
