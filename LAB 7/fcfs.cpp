@@ -7,6 +7,7 @@ int main()
 {
   int process[4];
   int burst_time[4];
+  int arrival_time[4];
   int waiting_time[4];
   int turn_around_time[4];
 
@@ -35,5 +36,21 @@ int main()
   {
     cout<<process[i]<<"               "<<burst_time[i]<<"               "<<waiting_time[i]<<"               "<<turn_around_time[i]<<endl;
   }
+
+  cout<<endl<<endl;
+
+  for(int i=0;i<4;i++)
+  {
+    cout<<"|"<<i;
+    for(int j=0;j<burst_time[i];j++)
+    {
+      cout<<" ";
+    }
+  }
+  cout<<"|"<<endl;
+
+  cout<<endl<<endl;
+
+
   return 0;
 }
