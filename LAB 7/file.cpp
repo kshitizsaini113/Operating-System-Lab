@@ -16,5 +16,16 @@ int main()
     process[i]=i;
     cin>>burst_time[i];
   }
+
+  waiting_time[0]=0;
+
+  for(int i=0;i<4;i++)
+  {
+    if(i>0)
+    {
+      waiting_time[i]=waiting_time[i-1]+burst_time[i-1];
+    }
+    turn_around_time[i]=waiting_time[i]+burst_time[i];
+  }
   return 0;
 }
