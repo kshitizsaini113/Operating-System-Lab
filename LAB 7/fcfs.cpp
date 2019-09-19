@@ -28,6 +28,7 @@ int main()
     turn_around_time[i]=waiting_time[i]+burst_time[i];
   }
 
+  cout<<endl<<endl;
 
   cout<<"Process"<<"         "<<"Burst Time"<<"     "<<"Waiting Time"<<"   "<<"Turn Around Time"<<endl;
   for(int i=0;i<4;i++)
