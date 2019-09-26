@@ -5,7 +5,7 @@ using namespace std;
 
 void input_burst_time(int burst_time[],int process[])
 {
-  cout<<"Enter burst time and arrival time (in pairs) for four processes : "<<endl;
+  cout<<"Enter burst time for four processes : "<<endl;
   for(int i=0;i<4;i++)
   {
     process[i]=i;
