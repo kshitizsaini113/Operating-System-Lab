@@ -1,4 +1,5 @@
 #include <iostream>
+#include <algorithm>
 #include <stdlib.h>
 
 using namespace std;
@@ -23,34 +24,43 @@ void sort_arrival_time(int arrival_time[],int process[],int burst_time[])
       if(arrival_time[i]>arrival_time[j])
       {
         swap(process[i],process[j]);
-        swap(burst_time[i],burst_time[j]);
         swap(arrival_time[i],arrival_time[j]);
+        swap(burst_time[i],burst_time[j]);
       }
     }
   }
 }
 
-void fcfs_operations(int waiting_time[],int burst_time[],int turn_around_time[],int arrival_time[])
+void sort_burst_time(int arrival_time[],int process[],int burst_time[])
 {
-  int starting_time[4];
-  int completion_time[4];
+  for(int i=0;i<4;i++)
+  {
+    for(int j=i+1;j<4;j++)
+    {
+      if(arrival_time[i]==arrival_time[j])
+      {
+        if(burst_time[i]>burst_time[j])
+        {
+          swap(process[i],process[j]);
+          swap(arrival_time[i],arrival_time[j]);
+          swap(burst_time[i],burst_time[j]);
+        }
+      }
+    }
+  }
+}
+
+void sjf_operations(int waiting_time[],int burst_time[],int turn_around_time[])
+{
+  waiting_time[0]=0;
 
   for(int i=0;i<4;i++)
   {
     if(i>0)
     {
-      starting_time[i]=max(arrival_time[i],completion_time[i-1]);
-      completion_time[i]=starting_time[i]+burst_time[i];
-      turn_around_time[i]=completion_time[i]-arrival_time[i];
-      waiting_time[i]=turn_around_time[i]-burst_time[i];
+      waiting_time[i]=waiting_time[i-1]+burst_time[i-1];
     }
-    else
-    {
-      starting_time[i]=arrival_time[i];
-      completion_time[i]=starting_time[i]+burst_time[i];
-      turn_around_time[i]=completion_time[i]-arrival_time[i];
-      waiting_time[i]=turn_around_time[i]-burst_time[i];
-    }
+    turn_around_time[i]=waiting_time[i]+burst_time[i];
   }
 }
 
@@ -97,6 +107,7 @@ int main()
   int process[4];
   int burst_time[4];
   int waiting_time[4];
+  int temp_waiting_time[4];
   int turn_around_time[4];
   int arrival_time[4];
 
@@ -104,11 +115,13 @@ int main()
 
   sort_arrival_time(arrival_time,process,burst_time);
 
-  fcfs_operations(waiting_time,burst_time,turn_around_time,arrival_time);
+  sort_burst_time(arrival_time,process,burst_time);
+
+  sjf_operations(waiting_time,burst_time,turn_around_time);
 
   print_table(process,burst_time,waiting_time,turn_around_time,arrival_time);
 
-  //print_gantt_chart(burst_time,turn_around_time,process);
+  print_gantt_chart(burst_time,turn_around_time,process);
 
   return 0;
 }
