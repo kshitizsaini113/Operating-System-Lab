@@ -31,26 +31,9 @@ void sort_arrival_time(int arrival_time[],int process[],int burst_time[])
   }
 }
 
-void sort_burst_time(int arrival_time[],int process[],int burst_time[])
-{
-  for(int i=0;i<4;i++)
-  {
-    for(int j=i+1;j<4;j++)
-    {
-      if(arrival_time[i]==arrival_time[j])
-      {
-        if(burst_time[i]>burst_time[j])
-        {
-          swap(process[i],process[j]);
-          swap(arrival_time[i],arrival_time[j]);
-          swap(burst_time[i],burst_time[j]);
-        }
-      }
-    }
-  }
-}
 
-void sjf_operations(int waiting_time[],int burst_time[],int turn_around_time[])
+
+void sjf_operations(int waiting_time[],int burst_time[],int turn_around_time[],int arrival_time[],int process[])
 {
   waiting_time[0]=0;
 
@@ -115,13 +98,11 @@ int main()
 
   sort_arrival_time(arrival_time,process,burst_time);
 
-  sort_burst_time(arrival_time,process,burst_time);
-
-  sjf_operations(waiting_time,burst_time,turn_around_time);
+  sjf_operations(waiting_time,burst_time,turn_around_time,arrival_time,process);
 
   print_table(process,burst_time,waiting_time,turn_around_time,arrival_time);
 
-  print_gantt_chart(burst_time,turn_around_time,process);
+  //print_gantt_chart(burst_time,turn_around_time,process);
 
   return 0;
 }
