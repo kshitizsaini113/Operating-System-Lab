@@ -30,10 +30,10 @@ int main()
 
   cout<<endl<<endl;
 
-  cout<<"Process"<<"         "<<"Burst Time"<<"     "<<"Waiting Time"<<"   "<<"Turn Around Time"<<endl;
+  cout<<"Process \tBurst Time \tWaiting Time \tTurn Around Time"<<endl;
   for(int i=0;i<4;i++)
   {
-    cout<<process[i]<<"               "<<burst_time[i]<<"               "<<waiting_time[i]<<"               "<<turn_around_time[i]<<endl;
+    cout<<process[i]<<"\t\t"<<burst_time[i]<<"\t\t"<<waiting_time[i]<<"\t\t"<<turn_around_time[i]<<endl;
   }
 
   cout<<endl<<endl;
