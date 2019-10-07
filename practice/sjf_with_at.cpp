@@ -89,5 +89,6 @@ int main()
     for(int i=0; i<num; i++)
     {
         cout<<mat[i][0]<<"\t\t"<<mat[i][1]<<"\t\t"<<mat[i][2]<<"\t\t"<<mat[i][4]<<"\t\t"<<mat[i][5]<<"\n";
+        //                                                            Waiting TIme       Turn Around Time
     }
 }
