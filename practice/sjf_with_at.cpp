@@ -79,6 +79,7 @@ int main()
     for(int i=0; i<num; i++)
     {
         cout<<mat[i][0]<<"\t\t"<<mat[i][1]<<"\t\t"<<mat[i][2]<<"\n";
+        //Processs  Arrival Time Burst Time
     }
 
     arrangeArrival(num, mat);
