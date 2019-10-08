@@ -31,6 +31,7 @@ void sort_arrival_time(int arrival_time[],int process[],int burst_time[])
 }
 
 void sort_burst_time(int arrival_time[],int process[],int burst_time[])
+//burst function will sort only those burst times when arrival time is same.
 {
   for(int i=0;i<4;i++)
   {
