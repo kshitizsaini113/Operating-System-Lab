@@ -10,6 +10,7 @@ void swap(int *a, int *b)
 }
 
 void arrangeArrival(int num, int mat[][6])
+//Used function to sort according to the arrival time of processes.
 {
     for(int i=0; i<num; i++)
     {
