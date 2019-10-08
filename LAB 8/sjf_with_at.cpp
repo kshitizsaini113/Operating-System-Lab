@@ -36,11 +36,14 @@ void sort_burst_time(int arrival_time[],int process[],int burst_time[])
   {
     for(int j=i+1;j<4;j++)
     {
-      if(burst_time[i]>burst_time[j])
+      if(arrival_time[i]==arrival_time[j])
       {
-        swap(process[i],process[j]);
-        swap(arrival_time[i],arrival_time[j]);
-        swap(burst_time[i],burst_time[j]);
+        if(burst_time[i]>burst_time[j])
+        {
+          swap(process[i],process[j]);
+          swap(arrival_time[i],arrival_time[j]);
+          swap(burst_time[i],burst_time[j]);
+        }
       }
     }
   }
@@ -59,7 +62,17 @@ void sjf_operations(int arrival_time[],int waiting_time[],int burst_time[],int t
   {
     temp = completion_time[i-1];
     int low = burst_time[i];
-
+    for(int j=i;j<4;j++)
+    {
+      if(temp >= arrival_time[j] && low >=burst_time[j])
+      {
+        low = burst_time[j];
+        value = j;
+      }
+    }
+    completion_time[value] = temp + burst_time[value];
+    turn_around_time[value] = completion_time[value] - arrival_time[value];
+    waiting_time[value] = turn_around_time[value] - burst_time[value];
   }
 }
 
