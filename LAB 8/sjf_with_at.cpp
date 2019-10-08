@@ -39,10 +39,10 @@ void print_table(int process[],int burst_time[],int waiting_time[],int turn_arou
 {
   cout<<endl<<endl;
 
-  cout<<"Process"<<"         "<<"Arrival Time"<<"   "<<"Burst Time"<<"     "<<"Waiting Time"<<"   "<<"Turn Around Time"<<endl;
+  cout<<"Process"<<" \t"<<"Arrival Time"<<" \t"<<"Burst Time"<<" \t"<<"Waiting Time"<<" \t"<<"Turn Around Time"<<endl;
   for(int i=0;i<4;i++)
   {
-    cout<<process[i]<<"               "<<arrival_time[i]<<"              "<<burst_time[i]<<"               "<<waiting_time[i]<<"               "<<turn_around_time[i]<<endl;
+    cout<<process[i]<<"\t\t"<<arrival_time[i]<<"\t\t"<<burst_time[i]<<"\t\t"<<waiting_time[i]<<"\t\t"<<turn_around_time[i]<<endl;
   }
 
   cout<<endl<<endl;
