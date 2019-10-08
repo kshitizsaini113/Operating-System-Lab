@@ -31,7 +31,7 @@ void completionTime(int num, int mat[][6])
 {
     int temp, val;
     mat[0][3] = mat[0][1] + mat[0][2];
-    //Completion Time
+    //Completion Time  =  Arrival time + burst time
     mat[0][5] = mat[0][3] - mat[0][1];
     mat[0][4] = mat[0][5] - mat[0][2];
 
