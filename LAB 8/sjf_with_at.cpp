@@ -30,8 +30,9 @@ void sort_arrival_time(int arrival_time[],int process[],int burst_time[])
   }
 }
 
-void sjf_operations(int waiting_time[],int burst_time[],int turn_around_time[])
+void sjf_operations(int waiting_time[],int burst_time[],int turn_around_time[],int completion_time[])
 {
+
 
 }
 
@@ -61,7 +62,7 @@ int main()
 
   sort_arrival_time(arrival_time,process,burst_time);
 
-  sjf_operations(waiting_time,burst_time,turn_around_time);
+  sjf_operations(waiting_time,burst_time,turn_around_time,completion_time);
 
   print_table(process,burst_time,waiting_time,turn_around_time,arrival_time);
 
