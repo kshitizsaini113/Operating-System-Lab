@@ -40,10 +40,13 @@ void completionTime(int num, int mat[][6])
     for(int i=1; i<num; i++)
     {
         temp = mat[i-1][3];
+        //completion time is fetched to temp
         int low = mat[i][2];
+        //burst time is fetched to low
         for(int j=i; j<num; j++)
         {
             if(temp >= mat[j][1] && low >= mat[j][2])
+            //checks if any combination of burst and completion time is smaller.
             {
                 low = mat[j][2];
                 val = j;
