@@ -31,7 +31,7 @@ void completionTime(int num, int mat[][6])
 {
     int temp, val;
 
-    
+
     //Initialising for zero.
     mat[0][3] = mat[0][1] + mat[0][2];
     //Completion Time  =  Arrival time + burst time
@@ -56,11 +56,13 @@ void completionTime(int num, int mat[][6])
             }
         }
         mat[val][3] = temp + mat[val][2];
+        //Adding completion time of previous process if less.
         mat[val][5] = mat[val][3] - mat[val][1];
         mat[val][4] = mat[val][5] - mat[val][2];
         for(int k=0; k<6; k++)
         {
             swap(mat[val][k], mat[i][k]);
+            //swap if less value is found
         }
     }
 }
