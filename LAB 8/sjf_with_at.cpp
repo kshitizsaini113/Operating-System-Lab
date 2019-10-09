@@ -63,7 +63,6 @@ void sjf_operations(int arrival_time[],int waiting_time[],int burst_time[],int t
   {
     temp = completion_time[i-1];
     int low = burst_time[i];
-    value = 0;
     for(int j=i;j<4;j++)
     {
       if(temp >= arrival_time[j] && low >=burst_time[j])
@@ -73,18 +72,10 @@ void sjf_operations(int arrival_time[],int waiting_time[],int burst_time[],int t
       }
     }
 
-    if(value!=0)
-    {
-      completion_time[value] = temp + burst_time[value];
-      turn_around_time[value] = completion_time[value] - arrival_time[value];
-      waiting_time[value] = turn_around_time[value] - burst_time[value];
-    }
-    else
-    {
-      completion_time[i] = arrival_time[i] + burst_time[i];
-      turn_around_time[i] = completion_time[i] - arrival_time[i];
-      waiting_time[i] = turn_around_time[i] - burst_time[i];
-    }
+    completion_time[value] = temp + burst_time[value];
+    turn_around_time[value] = completion_time[value] - arrival_time[value];
+    waiting_time[value] = turn_around_time[value] - burst_time[value];
+
   }
 }
 
