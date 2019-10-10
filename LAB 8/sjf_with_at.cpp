@@ -63,6 +63,7 @@ void sjf_operations(int arrival_time[],int waiting_time[],int burst_time[],int t
   for(int i=1;i<4;i++)
   {
     temp = completion_time[i-1];
+    //storing completion_time of previous process.
     int low = burst_time[i];
     for(int j=i;j<4;j++)
     {
