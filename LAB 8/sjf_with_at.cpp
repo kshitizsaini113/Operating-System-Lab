@@ -58,6 +58,7 @@ void sjf_operations(int arrival_time[],int waiting_time[],int burst_time[],int t
   completion_time[0] = arrival_time[0] + burst_time[0];
   turn_around_time[0] = completion_time[0] - arrival_time[0];
   waiting_time[0] = turn_around_time[0] - burst_time[0];
+  //Calculating for first process.
 
   for(int i=1;i<4;i++)
   {
