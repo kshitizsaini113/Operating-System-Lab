@@ -26,5 +26,11 @@ void print_table(int process[],int burst_time[],int waiting_time[],int turn_arou
 
 int main()
 {
+  int process[4];
+  int burst_time[4];
+  int waiting_time[4];
+  int temp_waiting_time[4];
+  int turn_around_time[4];
+  
   return 0;
 }
