@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <iostream>
 #include <stdlib.h>
 
 void input_burst_time(int burst_time[],int process[])
@@ -31,6 +31,8 @@ int main()
   int waiting_time[4];
   int temp_waiting_time[4];
   int turn_around_time[4];
-  
+
+
+
   return 0;
 }
