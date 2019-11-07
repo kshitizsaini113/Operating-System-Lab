@@ -1,6 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+void input_burst_time(int burst_time[],int process[])
+{
+  cout<<"Enter burst time for four processes : "<<endl;
+  for(int i=0;i<4;i++)
+  {
+    process[i]=i;
+    cin>>burst_time[i];
+  }
+}
+
 void print_table(int process[],int burst_time[],int waiting_time[],int turn_around_time[],int arrival_time[])
 {
   cout<<endl<<endl;
