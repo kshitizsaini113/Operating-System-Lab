@@ -13,6 +13,12 @@ void input_burst_time(int burst_time[],int process[])
   }
 }
 
+void round_robin_operations(int process[],int burst_time[],int turn_around_time,int completion_time[])
+{
+  int arrival_time=0;
+
+}
+
 void print_table(int process[],int burst_time[],int waiting_time[],int turn_around_time[])
 {
   cout<<endl<<endl;
