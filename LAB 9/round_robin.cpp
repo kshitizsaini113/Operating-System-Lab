@@ -1,6 +1,8 @@
 #include <iostream>
 #include <stdlib.h>
 
+using namespace std;
+
 void input_burst_time(int burst_time[],int process[])
 {
   cout<<"Enter burst time for four processes : "<<endl;
