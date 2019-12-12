@@ -15,8 +15,8 @@ Operating-System-Lab
 │   └── test.sh                           # 4 function calculator
 |
 ├── LAB 2
-|   ├── file1.sh                          # Archiving logs
-│   └── file2.sh                          # Auto discard old archives
+|   ├── file1.sh                          # 4 function calculator (updated)
+│   └── file2.sh                          # Multiplication without using *
 |
 ├── LAB 3
 |   ├── commandline.cpp                   # Archiving logs
