@@ -2,35 +2,19 @@
   <img src="https://github.com/kshitizsaini113/Operating-System-Lab/blob/master/OperatingSystem.png">
 </div>
 
-# Operating System
+# Operating System Lab
 
 
 ### Implementation tree
 ```
-Automation Lab
-├── Automation Scripts (Module 2)
-|   ├── screenshots                       # Screenshots of working Automation Scripts
-|   ├── class_tasks.sh                    # Delete same file from two directories
+Operating-System-Lab
+├── LAB 1
 |   ├── file1.sh                          # Archiving logs
 |   ├── file2.sh                          # Auto discard old archives
 |   ├── file3.sh                          # MySQL backup
-|   ├── file4.sh                          # Email web server summary
-|   ├── file5.sh                          # Ensuring web server is running
-|   ├── file6.sh                          # User command validation
-|   ├── file6_copy.sh                     # User command validation
-|   ├── file7.sh                          # Disk Usage alarm
-|   ├── file8.sh                          # Sending file to trash
-|   ├── file9.sh                          # Restoring file to trash
-|   ├── file10.sh                         # Logging delete action
-|   ├── file11.sh                         # File formatter
-|   ├── file12_file13.sh                  # Encrypting and Decrypting files
-|   ├── file14.sh                         # System Information
-|   ├── file15.sh                         # Bulk file downloader
-|   ├── file16.sh                         # Installing LAMP Stack
-│   ├── file17.sh                         # Get NIC's IP
-│   └── scenario9.png                     # Logging delete action using .bashrc
+│   └── test.sh                           # Logging delete action using .bashrc
 |
-├── Basic Scripts
+├── LAB 2
 |   ├── basicif.sh                        # If in shell script
 |   ├── function.sh                       # Functions in shell script
 |   ├── hello.sh                          # Hello message using some linux commands
@@ -41,7 +25,7 @@ Automation Lab
 |   ├── switchcase.sh                     # Using switch case in shell
 │   └── variable.sh                       # Variables in Shell Script
 |
-├── MAKE & MAKEFILE
+├── LAB 3
 |   ├── 0. Code
 |   |   ├── add.c                         # Function to add
 |   |   ├── divide.c                      # Function to devide
@@ -68,7 +52,7 @@ Automation Lab
 |       ├── 3.png                         # Automatic Rebuild
 |       └── 4.png                         # Creating Logs
 |
-├── PROBLEM_WHATSAPP
+├── LAB 4
 |   ├── prob1.sh                          # Hexadecimal to Binary
 |   ├── prob2.sh                          # Octal to Binary
 |   ├── prob3.sh                          # Checking Palindrome
@@ -80,9 +64,7 @@ Automation Lab
 |   ├── prob9.sh                          # Octal to Hexadecimal
 |   └── prob10.sh                         # Decimal to Hexadecimal
 |
-├── Screenshots                           # Contains screenshots of various executions
-│
-├── Some other scripts
+├── LAB 5
 |   ├── prob1.sh                          # Hexadecimal to Binary
 |   ├── prob2.sh                          # Octal to Binary
 |   ├── prob3.sh                          # Checking Palindrome
