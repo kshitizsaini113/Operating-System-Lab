@@ -9,10 +9,10 @@
 ```
 Operating-System-Lab
 ├── LAB 1
-|   ├── file1.sh                          # Archiving logs
-|   ├── file2.sh                          # Auto discard old archives
-|   ├── file3.sh                          # MySQL backup
-│   └── test.sh                           # Logging delete action using .bashrc
+|   ├── file1.sh                          # Echo commands
+|   ├── file2.sh                          # Linux commands using shell
+|   ├── file3.sh                          # 4 function calculator
+│   └── test.sh                           # 4 function calculator
 |
 ├── LAB 2
 |   ├── file1.sh                          # Archiving logs
