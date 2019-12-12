@@ -19,8 +19,8 @@ Operating-System-Lab
 │   └── file2.sh                          # Multiplication without using *
 |
 ├── LAB 3
-|   ├── commandline.cpp                   # Archiving logs
-│   └── obj                               # Auto discard old archives
+|   ├── commandline.cpp                   # Using command line arguments in c++
+│   └── obj                               # Executable file
 |
 ├── LAB 4
 |   ├── prob1.sh                          # Hexadecimal to Binary
