@@ -23,13 +23,13 @@ Operating-System-Lab
 │   └── obj                               # Executable file
 |
 ├── LAB 4
-|   ├── file1.cpp                         # Hexadecimal to Binary
-|   ├── file1.sh                          # Octal to Binary
-|   ├── file2.sh                          # Checking Palindrome
-|   ├── linked.c                          # Checking Perfect
-|   ├── program.c                         # Checking armstrong
-|   ├── sort.c                            # Printing DO
-|   └── test.c                            # Decimal to Hexadecimal
+|   ├── file1.cpp                         # Factorial using reccursion
+|   ├── file1.sh                          # Compiling using shell
+|   ├── file2.sh                          # Command line argument in shell
+|   ├── linked.c                          # Linked list
+|   ├── program.c                         # Basic Linked list
+|   ├── sort.c                            # Insertion Sort
+|   └── test.c                            # Testing shell in c
 |
 ├── LAB 5
 |   ├── prob1.sh                          # Hexadecimal to Binary
