@@ -40,7 +40,7 @@ Operating-System-Lab
 |   ├── file6.c                           # *1 pattern using fork
 |   └── test.c                            # Empty file created for tesing purpose
 │
-├── LAB 1
+├── LAB 6
 |   ├── file1.c                           # Using pipe command
 |   ├── file2.c                           # Understanding pipe command
 │   └── file3.c                           # Pipe using child and parent
