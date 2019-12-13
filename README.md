@@ -37,8 +37,8 @@ Operating-System-Lab
 |   ├── file3.c                           # Child v/s Parent process
 |   ├── file4.c                           # Child v/s Parent process
 |   ├── file5.c                           # Triangle using *
-|   ├── file6.c                           # Printing DO
-|   └── test.c                            # Decimal to Hexadecimal
+|   ├── file6.c                           # *1 pattern using fork
+|   └── test.c                            # Empty file created for tesing purpose
 │
 ├── DA Lab Manual.pdf                     # Lab file
 │
