@@ -32,13 +32,13 @@ Operating-System-Lab
 |   └── test.c                            # Testing shell in c
 |
 ├── LAB 5
-|   ├── prob1.sh                          # Hexadecimal to Binary
-|   ├── prob2.sh                          # Octal to Binary
-|   ├── prob3.sh                          # Checking Palindrome
-|   ├── prob4.sh                          # Checking Perfect
-|   ├── prob5.sh                          # Checking armstrong
-|   ├── prob6.sh                          # Printing DO
-|   └── prob10.sh                         # Decimal to Hexadecimal
+|   ├── file1.c                           # Using fork
+|   ├── file2.c                           # Using process id to check process type
+|   ├── file3.c                           # Child v/s Parent process
+|   ├── file4.c                           # Child v/s Parent process
+|   ├── file5.c                           # Triangle using *
+|   ├── file6.c                           # Printing DO
+|   └── test.c                            # Decimal to Hexadecimal
 │
 ├── DA Lab Manual.pdf                     # Lab file
 │
