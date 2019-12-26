@@ -45,16 +45,50 @@ Operating-System-Lab
 |   ├── file2.c                           # Understanding pipe command
 │   └── file3.c                           # Pipe using child and parent
 │
-
-
-<<<--------- TO BE UPDATED -------------->>
-
-
-
-├── DA Lab Manual.pdf                     # Lab file
+├── LAB 7
+|   ├── fcfs.cpp                          # First come first serve code
+│   └── fcfs_at.cpp                       # First come first serve with arrival time code
 │
-└── SCENARIO5.pdf                         # Presentation of SCENARIO-5 Module-2
+├── LAB 8
+|   ├── myfunction.h                      # Functions for sjf
+|   ├── sjf.cpp                           # Shortest job first code
+|   ├── sjf2.cpp                          # Sjf using myfunction.h
+│   └── sjf_with_at.cpp                   # Shortest job first with arrival time
+│
+├── LAB 9
+|   ├── round_robin.cpp                   # Round Robin Code
+│   └── round_robin_gfg.cpp               # Round Robin code from geeks for geeks
+│
+├── Other
+|   ├── semaphore.c                       # Semaphore
+|   ├── semaphore2.c                      # Semaphore
+|   ├── banker'salgorithm.cpp             # Banker's Algorithm
+|   ├── paging.c                          # Paging Code
+│   └── priority_scheduling.cpp           # Priority Scheduling code
+│
+├── practice
+|   ├── file1.sh                          # Hello world program
+|   ├── file2.sh                          # Understanding variables
+|   ├── file3.sh                          # Empty file
+|   ├── file4.sh                          # Arguments
+|   ├── file5.sh                          # If-else
+|   ├── priority.cpp                      # Incomplete priority scheduling code
+│   └── sjf_with_at.cpp                   # SJF with arrival time
+│
+├── .gitignore                            # Gitignore file
+│
+├── OperatingSystem.png                   # Image asset
+│
+├── README.md                             # Readme file
+│
+├── a.out                                 # Output file
+│
+├── file1.cpp                             # Factorial code
+│
+└── file1.sh                              # Factorial using c++ code
 ```
+
+Further codes required : **Priority Scheduling(premptive), sjf(premptive) and other codes related to Operating System...**
 
 
 ## Open for Contribution
